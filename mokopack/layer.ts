@@ -1,4 +1,4 @@
-export default class Layer{
+export class Layer{
   options: object;
   constructor(options: object){
     this.options=options;
@@ -10,3 +10,4 @@ export default class Layer{
     return process(script,this.options);
   }
 }
+export type layersType={pre:Layer[]|void, post:Layer[]|void};

@@ -1,13 +1,14 @@
-import Layer from "../layer.ts";
+import {layersType} from "../layer.ts";
 import build from "./build.ts";
 class Moko{
+  layers:layersType;
   constructor(
-    layers:{pre:Layer[], post:Layer[]}
+    layers:layerType
   ){
-    
+    this.layers=layers;
   }
   async build(path: string): Promise<string>{
-    return build(path);
+    return build({path:path,layers:layers});
   }
 }
 
