@@ -3,7 +3,3 @@
 # Replit files
 /.upm/
 /.shell.nix
-
-# Added by cargo
-
-/target
