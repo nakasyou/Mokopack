@@ -1,4 +1,4 @@
-run = "cowsay Configure me!"
+run = "deno run -A ./test/build/main.ts"
 
 [nix]
 channel = "stable-22_11"
