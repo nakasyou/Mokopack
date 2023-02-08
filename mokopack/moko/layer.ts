@@ -10,4 +10,7 @@ export class Layer{
     return process(script,this.options);
   }
 }
-export type layersType={pre:Layer[]|void, post:Layer[]|void};
+export type layers={
+  pre:Layer[]|void,
+  post:Layer[]|void
+};
